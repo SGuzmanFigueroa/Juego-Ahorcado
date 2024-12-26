@@ -16,5 +16,8 @@ def save_score():
     scores.append(data["score"])
     return jsonify({"message": "Puntuación guardada correctamente.", "scores": scores})
 
+import os
+
 if __name__ == "__main__":
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))  # Obtén el puerto del entorno o usa 5000 por defecto
+    app.run(host="0.0.0.0", port=port, debug=True)
