@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+.word-container {
+    font-size: 24px;
+    margin: 20px 0;
+    letter-spacing: 3px;
+}
+.input-container input {
+    padding: 10px;
+    font-size: 18px;
+    width: 50px;
+    text-align: center;
+}
+.input-container button {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-left: 10px;
+}
+.message {
+    font-size: 20px;
+    margin: 20px;
+}
+.score-container {
+    margin-top: 20px;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego del Ahorcado</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilos.css') }}">
+</head>
+<body>
+    <h1>Juego del Ahorcado</h1>
+    <div id="hint">Pista: <span></span></div>
+    <div class="word-container" id="word"></div>
+    <div class="input-container">
+        <input type="text" id="letter" maxlength="1" />
+        <button onclick="checkLetter()">Probar letra</button>
+    </div>
+    <div class="message" id="message"></div>
+    <div class="score-container">
+        <button onclick="saveScore()">Guardar puntuación</button>
+    </div>
+    <canvas id="hangman" width="200" height="250" style="border: 1px solid #000; margin: 20px auto; display: block;"></canvas>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
